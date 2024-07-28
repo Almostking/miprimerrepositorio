@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Mapaconceptualdehtml"
+		},
+		{
+			"path": "../PHP"
+		},
+		{
+			"path": "../PYTHON"
+		},
+		{
+			"path": "../ServicioMecanico"
+		},
+		{
+			"path": "../.pytest_cache"
+		},
+		{
+			"path": "../.vscode"
+		},
+		{
+			"path": "../Biblioteca"
+		},
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "../loyaltech.asistencia"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ServicioMecanico"
+	}
+}

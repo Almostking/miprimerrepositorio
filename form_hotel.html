@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Agregar Hotel</title>
+    <script>
+        function validarFormulario() {
+            let nombre = document.forms["formHotel"]["nombre"].value;
+            let ubicacion = document.forms["formHotel"]["ubicacion"].value;
+            let habitaciones_disponibles = document.forms["formHotel"]["habitaciones_disponibles"].value;
+            let tarifa_noche = document.forms["formHotel"]["tarifa_noche"].value;
+            if (nombre == "" || ubicacion == "" || habitaciones_disponibles == "" || tarifa_noche == "") {
+                alert("Todos los campos deben ser completados");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agregar Hotel</h1>
+        </header>
+        <form name="formHotel" action="procesar_hotel.php" method="POST" onsubmit="return validarFormulario()">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="ubicacion" class="form-label">Ubicación</label>
+                <input type="text" class="form-control" id="ubicacion" name="ubicacion" required>
+            </div>
+            <div class="mb-3">
+                <label for="habitaciones_disponibles" class="form-label">Habitaciones Disponibles</label>
+                <input type="number" class="form-control" id="habitaciones_disponibles" name="habitaciones_disponibles" required>
+            </div>
+            <div class="mb-3">
+                <label for="tarifa_noche" class="form-label">Tarifa por Noche</label>
+                <input type="number" step="0.01" class="form-control" id="tarifa_noche" name="tarifa_noche" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Hotel</button>
+        </form>
+        <a href="dashboard.php" class="btn btn-secondary mt-3">Volver al Dashboard</a>
+    </div>
+</body>
+</html>

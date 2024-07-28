@@ -1,0 +1,63 @@
+/* Estilo para el contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Estilo para los encabezados */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los formularios */
+form {
+    margin-bottom: 30px;
+}
+
+/* Estilo para los campos de texto y contraseña */
+.form-control {
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para los botones de registro e inicio de sesión */
+.green-button {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efecto hover para los botones */
+.green-button:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Estilo para los mensajes de error y éxito */
+.alert {
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.alert-danger {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: #fff;
+}

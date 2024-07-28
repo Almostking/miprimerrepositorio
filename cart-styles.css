@@ -1,0 +1,31 @@
+/* Estilos para cart.php */
+
+body {
+    background-color: #f0f0f0; /* Color de fondo para todo el cuerpo */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor para centrar el contenido */
+    margin: auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+#cart-container {
+    border: 1px solid #ddd; /* Borde del contenedor del carrito */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.btn-success {
+    background-color: #4CAF50; /* Color verde personalizado */
+    border-color: #4CAF50; /* Color del borde */
+    color: #fff; /* Color del texto */
+}
+
+.btn-success:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+    border-color: #45a049; /* Cambio del color del borde al pasar el ratón */
+}
